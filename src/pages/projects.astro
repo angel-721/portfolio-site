@@ -1,0 +1,33 @@
+---
+import "../assets/style.css";
+import "../assets/pico.min.css";
+import ProjectsRepo from "../components/ProjectsRepo/ProjectsRepo.svelte"
+---
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="../../public/favicon.png">
+	<meta name="author" content="Angel Velasquez">
+    <title>Angel Velasquez</title>
+  </head>
+
+  <body class="container">
+		<div id="go-back">
+
+			<a href="/" class="contrast">
+			<svg id="back-arrow" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier"> <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" 
+						stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+				</svg>
+		<span id="go-back-text">
+			Angel Velasquez
+		</span>
+		</a>
+			</div>
+		<ProjectsRepo/>
+  </body>
+</html>

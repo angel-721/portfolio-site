@@ -1,0 +1,55 @@
+---
+let description = "Angel Velasquez aspires to be a Machine Learning Engineer and works on engineering usable and feature-rich software.";
+  const keywords = [
+    'Machine Learning',
+    'Python',
+    'Web Development',
+    'Virtual Reality',
+    'Software Engineering'
+  ];
+import "../assets/style.css";
+import "../assets/pico.min.css";
+import Left from "../components/Left/Left.svelte"
+import Right from "../components/Right/Right.svelte"
+import  SpeedInsights  from "@vercel/speed-insights/astro"
+---
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="../../public/favicon.png">
+	<meta name="keywords" content={keywords.join(', ')}>
+	<meta name="author" content="Angel Velasquez">
+    <title>Angel Velasquez</title>
+  </head>
+
+  <body class="container">
+		<div class="grid">
+
+		 <div>
+		  <div id="left-side">
+		    <Left/>
+		   </div>
+		 </div>
+
+		 <div id="right-side">
+		   <Right/>
+		   <footer>
+             <small>
+      			Created with <a href="https://svelte.dev/" target="_blank">Svelte</a> and <a
+        		href="https://astro.build/" target="_blank">Astro</a>.
+      			Styled with <a href="https://picocss.com/" target="_blank">Pico.css</a>.
+      			Deployed with <a href="https://vercel.com/" target="_blank">Vercel</a>.
+      			Icons from <a href="https://fonts.google.com/icons" target="_blank">Google Fonts</a> and 
+				<a href="https://simpleicons.org/" target="_blank">Simple Icons</a>.
+				</small>
+			</footer>
+	       <SpeedInsights />
+		 </div>
+
+		</div>
+  </body>
+
+</html>
